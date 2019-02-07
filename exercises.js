@@ -1,5 +1,5 @@
 function stringToLeet(string) {
-  const alphabets = {
+  const alphabet = {
     a: '4',
     A: '4',
     e: '3',
@@ -17,8 +17,8 @@ function stringToLeet(string) {
   };
 
   for (var i = 0; i < string.length; i++) {
-    if (alphabets[string[i]]) {
-      string = string.replace(string[i], alphabets[string[i]]);
+    if (alphabet[string[i]]) {
+      string = string.replace(string[i], alphabet[string[i]]);
     }
   }
 
